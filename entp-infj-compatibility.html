@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENTP + INFJ — Marriage Compatibility</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --purple: #6C5CE7;
+    --purple-light: #f0eeff;
+    --purple-mid: #a89df5;
+    --teal: #00B894;
+    --teal-light: #e0faf4;
+    --teal-mid: #55d8b8;
+    --coral: #E17055;
+    --coral-light: #fff0ec;
+    --blue: #0984E3;
+    --blue-light: #e8f4fd;
+    --green: #27AE60;
+    --green-light: #eafaf1;
+    --ink: #1a1a2e;
+    --ink-mid: #4a4a6a;
+    --ink-light: #8888aa;
+    --paper: #fdfcf9;
+    --rule: #e8e6f0;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(108,92,231,0.35) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(0,184,148,0.25) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .hero-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    position: relative;
+  }
+
+  .hero-title .ampersand {
+    font-style: italic;
+    color: var(--teal-mid);
+  }
+
+  .hero-sub {
+    margin-top: 14px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    position: relative;
+    font-weight: 300;
+  }
+
+  .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid;
+  }
+
+  .badge-him {
+    background: rgba(108,92,231,0.2);
+    border-color: rgba(108,92,231,0.5);
+    color: var(--purple-mid);
+  }
+
+  .badge-her {
+    background: rgba(0,184,148,0.15);
+    border-color: rgba(0,184,148,0.4);
+    color: var(--teal-mid);
+  }
+
+  .badge-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+  }
+
+  .badge-him .badge-dot { background: var(--purple-mid); }
+  .badge-her .badge-dot { background: var(--teal-mid); }
+
+  /* Connection bridge */
+  .bridge {
+    background: linear-gradient(135deg, var(--purple-light) 0%, var(--teal-light) 100%);
+    padding: 28px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .bridge-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .bridge-label {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .bridge-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .bridge-text strong {
+    color: var(--purple);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* Main content */
+  .content {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 32px 80px;
+  }
+
+  /* Section header */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 48px 0 24px;
+  }
+
+  .section-header:first-child { margin-top: 0; }
+
+  .section-icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  /* Cards grid */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 60px; height: 60px;
+    border-radius: 0 14px 0 60px;
+    opacity: 0.12;
+  }
+
+  .card-strength {
+    background: var(--green-light);
+    border-color: #c3e6cb;
+  }
+  .card-strength::before { background: var(--green); }
+
+  .card-pitfall {
+    background: var(--coral-light);
+    border-color: #f5cdb8;
+  }
+  .card-pitfall::before { background: var(--coral); }
+
+  .card-tip {
+    background: var(--blue-light);
+    border-color: #b8d9f5;
+  }
+  .card-tip::before { background: var(--blue); }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    color: var(--ink-mid);
+    line-height: 1.55;
+    font-weight: 300;
+  }
+
+  .card-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  /* Traits comparison */
+  .trait-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 8px;
+  }
+
+  .trait-row td {
+    padding: 12px 16px;
+    font-size: 13px;
+    vertical-align: middle;
+  }
+
+  .trait-row td:first-child {
+    background: var(--purple-light);
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ddd8fb;
+    border-right: none;
+    color: #4a3faa;
+    font-weight: 500;
+    width: 38%;
+  }
+
+  .trait-row td:nth-child(2) {
+    background: #f5f4f9;
+    border-top: 1px solid #e8e6f0;
+    border-bottom: 1px solid #e8e6f0;
+    color: var(--ink-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 24%;
+  }
+
+  .trait-row td:last-child {
+    background: var(--teal-light);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #c0ede2;
+    border-left: none;
+    color: #007a5e;
+    font-weight: 500;
+    width: 38%;
+    text-align: right;
+  }
+
+  .trait-row.conflict td:nth-child(2) {
+    background: #fff0ec;
+    border-color: #f5cdb8;
+    color: var(--coral);
+  }
+
+  .trait-row.harmony td:nth-child(2) {
+    background: var(--green-light);
+    border-color: #c3e6cb;
+    color: var(--green);
+  }
+
+  /* Bottom note */
+  .golden-pair {
+    margin-top: 52px;
+    padding: 28px 32px;
+    background: linear-gradient(135deg, rgba(108,92,231,0.06), rgba(0,184,148,0.06));
+    border-radius: 16px;
+    border: 1px solid var(--rule);
+    text-align: center;
+  }
+
+  .golden-pair-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .golden-pair-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .golden-pair-text em {
+    color: var(--purple);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* Divider */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero, .bridge, .content > * {
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .card:nth-child(1) { animation-delay: 0.05s; }
+  .card:nth-child(2) { animation-delay: 0.10s; }
+  .card:nth-child(3) { animation-delay: 0.15s; }
+  .card:nth-child(4) { animation-delay: 0.20s; }
+  .card:nth-child(5) { animation-delay: 0.25s; }
+  .card:nth-child(6) { animation-delay: 0.30s; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-label">MBTI Marriage Compatibility</div>
+  <div class="hero-title">ENTP <span class="ampersand">&amp;</span> INFJ</div>
+  <div class="hero-sub">The Debater meets the Advocate — 25 &amp; 23</div>
+  <div class="badge-row">
+    <div class="badge badge-him">
+      <span class="badge-dot"></span>
+      Him — Extraverted · Intuitive · Thinking · Prospecting · Turbulent
+    </div>
+    <div class="badge badge-her">
+      <span class="badge-dot"></span>
+      Her — Introverted · Intuitive · Feeling · Judging · Turbulent
+    </div>
+  </div>
+</div>
+
+<div class="bridge">
+  <div class="bridge-inner">
+    <div class="bridge-label">The Golden Pair</div>
+    <div class="bridge-text">
+      Called the <strong>"Golden Pair"</strong> in many MBTI traditions — high friction, but when it works,
+      one of the most intellectually and emotionally complementary combinations possible.
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- Trait comparison -->
+  <div class="section-header">
+    <div class="section-icon" style="background:#f0eeff;">🧩</div>
+    <div class="section-title">Trait-by-trait comparison</div>
+  </div>
+
+  <table class="trait-table">
+    <tr class="trait-row harmony">
+      <td>Intuitive (N) — big ideas, patterns, meaning</td>
+      <td>SHARED ✓</td>
+      <td>Intuitive (N) — imagination, future-focus</td>
+    </tr>
+    <tr class="trait-row harmony">
+      <td>Turbulent (-T) — growth-driven, self-critical</td>
+      <td>SHARED ✓</td>
+      <td>Turbulent (-T) — perfectionistic, emotionally sensitive</td>
+    </tr>
+    <tr class="trait-row conflict">
+      <td>Extraverted (E) — energized by people &amp; stimulation</td>
+      <td>TENSION ↔</td>
+      <td>Introverted (I) — energized by solitude &amp; depth</td>
+    </tr>
+    <tr class="trait-row conflict">
+      <td>Thinking (T) — logic-first, debates for sport</td>
+      <td>TENSION ↔</td>
+      <td>Feeling (F) — values-first, arguments feel personal</td>
+    </tr>
+    <tr class="trait-row conflict">
+      <td>Prospecting (P) — open-ended, resists being pinned down</td>
+      <td>TENSION ↔</td>
+      <td>Judging (J) — wants plans, closure, and structure</td>
+    </tr>
+  </table>
+
+  <!-- Strengths -->
+  <div class="section-header">
+    <div class="section-icon" style="background:#eafaf1;">💚</div>
+    <div class="section-title">Strengths of this pairing</div>
+  </div>
+
+  <div class="cards">
+    <div class="card card-strength">
+      <span class="card-icon">💡</span>
+      <div class="card-title">Rare intellectual chemistry</div>
+      <div class="card-desc">Both are N types who love abstract ideas, meaning, and big-picture thinking. Conversations never feel shallow.</div>
+    </div>
+    <div class="card card-strength">
+      <span class="card-icon">⚡</span>
+      <div class="card-title">He energizes, she deepens</div>
+      <div class="card-desc">His extraverted spark pulls her into the world; her introverted depth anchors his scattered energy.</div>
+    </div>
+    <div class="card card-strength">
+      <span class="card-icon">👁️</span>
+      <div class="card-title">She understands him deeply</div>
+      <div class="card-desc">The INFJ's rare ability to read people means she sees what he's actually feeling — often before he does.</div>
+    </div>
+    <div class="card card-strength">
+      <span class="card-icon">🌍</span>
+      <div class="card-title">Shared idealism</div>
+      <div class="card-desc">Both genuinely want to leave things better than they found them. Values alignment at the core level.</div>
+    </div>
+    <div class="card card-strength">
+      <span class="card-icon">🎭</span>
+      <div class="card-title">Complementary social styles</div>
+      <div class="card-desc">His wit and warmth plus her perceptive warmth — they cover each other's blind spots in any room.</div>
+    </div>
+    <div class="card card-strength">
+      <span class="card-icon">📈</span>
+      <div class="card-title">Both want to grow</div>
+      <div class="card-desc">The shared Turbulent identity means both partners are motivated to improve — in themselves and the relationship.</div>
+    </div>
+  </div>
+
+  <!-- Pitfalls -->
+  <div class="section-header">
+    <div class="section-icon" style="background:#fff0ec;">⚠️</div>
+    <div class="section-title">Pitfalls to watch</div>
+  </div>
+
+  <div class="cards">
+    <div class="card card-pitfall">
+      <span class="card-icon">🗣️</span>
+      <div class="card-title">Logic vs. feeling in conflict</div>
+      <div class="card-desc">He debates to think out loud. She debates from the heart. The same argument means completely different things to each of them.</div>
+    </div>
+    <div class="card card-pitfall">
+      <span class="card-icon">🔋</span>
+      <div class="card-title">Energy drain mismatch</div>
+      <div class="card-desc">His social drive can unknowingly consume her recharge time. She may reach empty without ever saying so.</div>
+    </div>
+    <div class="card card-pitfall">
+      <span class="card-icon">📅</span>
+      <div class="card-title">Structure conflict</div>
+      <div class="card-desc">She wants plans and closure. He resists being pinned down. This creates low-grade friction if not addressed directly.</div>
+    </div>
+    <div class="card card-pitfall">
+      <span class="card-icon">🌀</span>
+      <div class="card-title">Double turbulence spiral</div>
+      <div class="card-desc">Both partners are prone to self-doubt and emotional sensitivity. During hard seasons, insecurity can amplify in both directions.</div>
+    </div>
+    <div class="card card-pitfall">
+      <span class="card-icon">🚪</span>
+      <div class="card-title">The INFJ door slam</div>
+      <div class="card-desc">When her core values are crossed too many times, she may emotionally shut down completely — quietly and permanently.</div>
+    </div>
+    <div class="card card-pitfall">
+      <span class="card-icon">🎯</span>
+      <div class="card-title">Devil's advocate trap</div>
+      <div class="card-desc">He argues for sport and mental exercise. She can't tell when he means it and when he doesn't — and it stings either way.</div>
+    </div>
+  </div>
+
+  <!-- Tips -->
+  <div class="section-header">
+    <div class="section-icon" style="background:#e8f4fd;">🛠️</div>
+    <div class="section-title">Practical tips for the marriage</div>
+  </div>
+
+  <div class="cards">
+    <div class="card card-tip">
+      <span class="card-icon">🚦</span>
+      <div class="card-title">Debate signal system</div>
+      <div class="card-desc">Establish a cue — "I'm just thinking out loud" vs. "I actually mean this" — so she knows when to engage vs. let it pass.</div>
+    </div>
+    <div class="card card-tip">
+      <span class="card-icon">🧘</span>
+      <div class="card-title">Protect her solitude</div>
+      <div class="card-desc">Schedule real recharge time for her. Don't fill every evening and weekend. Her quiet time isn't rejection — it's maintenance.</div>
+    </div>
+    <div class="card card-tip">
+      <span class="card-icon">🗺️</span>
+      <div class="card-title">Structure compromise</div>
+      <div class="card-desc">Plan the big things (finances, travel, big decisions). Leave room for spontaneity in the day-to-day. Both get something.</div>
+    </div>
+    <div class="card card-tip">
+      <span class="card-icon">💬</span>
+      <div class="card-title">Name feelings early</div>
+      <div class="card-desc">With double Turbulent, unspoken things fester. Build the habit of naming emotions before they become resentments.</div>
+    </div>
+    <div class="card card-tip">
+      <span class="card-icon">🏠</span>
+      <div class="card-title">Divide the domains</div>
+      <div class="card-desc">Let her handle structure where stakes are high. Let him handle improvisation where stakes are low. Stop fighting over who's right.</div>
+    </div>
+    <div class="card card-tip">
+      <span class="card-icon">📖</span>
+      <div class="card-title">Share the frameworks</div>
+      <div class="card-desc">Both scored Turbulent — read about it together. Understanding the shared pattern creates empathy instead of blame.</div>
+    </div>
+  </div>
+
+  <!-- Bottom note -->
+  <div class="golden-pair">
+    <div class="golden-pair-label">Bottom line</div>
+    <div class="golden-pair-text">
+      High ceiling, real friction. The same qualities that make him fascinating to her can wear on her over time,
+      and vice versa. But the shared <em>N foundation</em> — imagination, meaning, and depth — gives this pairing
+      more to build on than almost any other combination.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
